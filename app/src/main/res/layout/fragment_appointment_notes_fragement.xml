@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:layout_margin="12sp"
+    tools:context="com.example.completeorderlistapplication.ui.checkout.notes.AppointmentNotesFragement">
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Notes"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:id="@+id/notes_header"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:id="@+id/AppointmentNotes"
+            app:layout_constraintTop_toBottomOf="@id/notes_header"
+            tools:text="Prefers U-Shape Cut" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

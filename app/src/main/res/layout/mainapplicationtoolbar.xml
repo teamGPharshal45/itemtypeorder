@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="6dp"
+    android:padding="5dp">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        style="@style/Imagebutton"
+        android:contentDescription="@string/backButton"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+
+    <TextView
+        style="@style/AppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        />
+
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        style="@style/Imagebutton"
+        android:contentDescription="@string/backButton"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/baseline_lock_24" />
+
+
+</RelativeLayout>

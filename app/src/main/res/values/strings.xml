@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OrdersListApplication</string>
+    <string name="navbar_title">BOOKINGS</string>
+    <string name="receipt_title">RECEIPT</string>
+    <string name="order_title">WOMENS HAIRCUT</string>
+    <string name="backButton">Back Arrow</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

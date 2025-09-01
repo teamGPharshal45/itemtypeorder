@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2CECE"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/mainapplicationtoolbar"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+    <include layout="@layout/tabsview"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/tabview"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <include layout="@layout/notesviews"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tabview"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHECKOUT"
+        android:textColor="@color/white"
+        android:background="@color/ApplicationGreen"
+        style="@style/ApplicationButton" />
+
+
+
+
+
+
+</RelativeLayout>
