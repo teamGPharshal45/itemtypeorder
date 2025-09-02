@@ -6,24 +6,30 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.itemtype.R;
 import com.example.itemtype.dummydatagenerators.TestDataGenerator;
-import com.example.itemtype.models.MainOrderDetails;
-import com.example.itemtype.models.OrdersDetails;
+import com.example.itemtype.models.DateItem;
+import com.example.itemtype.models.ListItem;
+import com.example.itemtype.models.OrderItem;
+import com.example.itemtype.ui.CancelledOrders.OrdersAdapter;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 
 public class PastOrder extends Fragment  {
 
     RecyclerView recyclerView;
-    ArrayList<MainOrderDetails> mainOrderDetailsArrayList = new ArrayList<>();
+
+    OrdersAdapter adapter;
 
     Random random = new Random();
     TestDataGenerator dataGenerator = new TestDataGenerator();
+    private List<ListItem> itemArrayList;
 
 
     @Override
@@ -38,23 +44,29 @@ public class PastOrder extends Fragment  {
 
     public void CreateDatesOrder()
     {
+        itemArrayList = new ArrayList<>();
 
 
         for (int i=0;i<5;i++)
         {
-            ArrayList<OrdersDetails> childList = new ArrayList<>();
-
-            int num = 2 + random.nextInt(4);
-
-            for(int j=0;j<num;j++){
-                childList.add(dataGenerator.GetRandomOrder());
-            }
-
             String date = "2025-08-"+(20+i);
 
-            mainOrderDetailsArrayList.add(new MainOrderDetails(childList,date));
+            itemArrayList.add(new DateItem(date));
+
+            int num = 2 + random.nextInt(20);
+
+            for(int j=0;j<num;j++){
+                itemArrayList.add(new OrderItem(dataGenerator.GetRandomOrder()));
+            }
+
 
         }
+
+
+
+        adapter = new OrdersAdapter(getContext(),itemArrayList);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setAdapter(adapter);
 
 
 

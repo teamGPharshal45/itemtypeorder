@@ -1,0 +1,971 @@
+{
+  "dates" : [ {
+    "date" : "2025-09-02",
+    "orders" : [ {
+      "duration" : "58 min",
+      "total" : "70$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Sean Cassidy",
+      "startTime" : "12:00 AM",
+      "endTime" : "13:00 AM",
+      "services" : [ {
+        "price" : "20$",
+        "serviceName" : "Hair Wash"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Massage"
+      }, {
+        "price" : "20$",
+        "serviceName" : "Beard Trim"
+      } ],
+      "orderTitle" : "Order 1",
+      "customerName" : "Peter Maximoff",
+      "phoneNo" : "+1(479) 153-7300"
+    }, {
+      "duration" : "54 min",
+      "total" : "20$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Sean Cassidy",
+      "startTime" : "12:00 AM",
+      "endTime" : "13:00 AM",
+      "services" : [ {
+        "price" : "20$",
+        "serviceName" : "Men's Haircut"
+      } ],
+      "orderTitle" : "Order 2",
+      "customerName" : "Steve Khan",
+      "phoneNo" : "+1(834) 723-2224"
+    }, {
+      "duration" : "55 min",
+      "total" : "140$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Sean Cassidy",
+      "startTime" : "11:00 AM",
+      "endTime" : "12:00 AM",
+      "services" : [ {
+        "price" : "80$",
+        "serviceName" : "Hair Wash"
+      }, {
+        "price" : "60$",
+        "serviceName" : "Hair Wash"
+      } ],
+      "orderTitle" : "Order 3",
+      "customerName" : "Clint Stark",
+      "phoneNo" : "+1(173) 895-7286"
+    }, {
+      "duration" : "51 min",
+      "total" : "60$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "11:00 AM",
+      "endTime" : "12:00 AM",
+      "services" : [ {
+        "price" : "60$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 4",
+      "customerName" : "Peter Khan",
+      "phoneNo" : "+1(866) 214-7008"
+    }, {
+      "duration" : "72 min",
+      "total" : "110$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "12:00 AM",
+      "endTime" : "13:00 AM",
+      "services" : [ {
+        "price" : "80$",
+        "serviceName" : "Women's Haircut"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Men's Haircut"
+      } ],
+      "orderTitle" : "Order 5",
+      "customerName" : "Kamala Rogers",
+      "phoneNo" : "+1(635) 737-3869"
+    }, {
+      "duration" : "60 min",
+      "total" : "160$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "11:00 AM",
+      "endTime" : "12:00 AM",
+      "services" : [ {
+        "price" : "30$",
+        "serviceName" : "Hair Coloring"
+      }, {
+        "price" : "60$",
+        "serviceName" : "Hair Wash"
+      }, {
+        "price" : "70$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 6",
+      "customerName" : "Peter Doe",
+      "phoneNo" : "+1(221) 983-9856"
+    }, {
+      "duration" : "50 min",
+      "total" : "70$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Scott Summers",
+      "startTime" : "11:00 AM",
+      "endTime" : "12:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Women's Haircut"
+      } ],
+      "orderTitle" : "Order 7",
+      "customerName" : "Mary Maximoff",
+      "phoneNo" : "+1(363) 705-8135"
+    }, {
+      "duration" : "44 min",
+      "total" : "30$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Sean Cassidy",
+      "startTime" : "11:00 AM",
+      "endTime" : "12:00 AM",
+      "services" : [ {
+        "price" : "30$",
+        "serviceName" : "Women's Haircut"
+      } ],
+      "orderTitle" : "Order 8",
+      "customerName" : "Peter Doe",
+      "phoneNo" : "+1(138) 418-5203"
+    }, {
+      "duration" : "68 min",
+      "total" : "130$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "13:00 AM",
+      "endTime" : "14:00 AM",
+      "services" : [ {
+        "price" : "80$",
+        "serviceName" : "Massage"
+      }, {
+        "price" : "20$",
+        "serviceName" : "Men's Haircut"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Beard Trim"
+      } ],
+      "orderTitle" : "Order 9",
+      "customerName" : "Mary Romanoff",
+      "phoneNo" : "+1(664) 969-5225"
+    }, {
+      "duration" : "57 min",
+      "total" : "130$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "10:00 AM",
+      "endTime" : "11:00 AM",
+      "services" : [ {
+        "price" : "20$",
+        "serviceName" : "Massage"
+      }, {
+        "price" : "70$",
+        "serviceName" : "Hair Coloring"
+      }, {
+        "price" : "40$",
+        "serviceName" : "Hair Coloring"
+      } ],
+      "orderTitle" : "Order 10",
+      "customerName" : "Bruce Parker",
+      "phoneNo" : "+1(216) 595-3460"
+    }, {
+      "duration" : "67 min",
+      "total" : "100$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "16:00 AM",
+      "endTime" : "17:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Massage"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Facial"
+      } ],
+      "orderTitle" : "Order 11",
+      "customerName" : "Tony Barton",
+      "phoneNo" : "+1(607) 506-8348"
+    }, {
+      "duration" : "33 min",
+      "total" : "150$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "14:00 AM",
+      "endTime" : "15:00 AM",
+      "services" : [ {
+        "price" : "50$",
+        "serviceName" : "Massage"
+      }, {
+        "price" : "80$",
+        "serviceName" : "Hair Coloring"
+      }, {
+        "price" : "20$",
+        "serviceName" : "Hair Wash"
+      } ],
+      "orderTitle" : "Order 12",
+      "customerName" : "Tony Stark",
+      "phoneNo" : "+1(382) 300-6617"
+    }, {
+      "duration" : "38 min",
+      "total" : "100$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "9:00 AM",
+      "endTime" : "10:00 AM",
+      "services" : [ {
+        "price" : "40$",
+        "serviceName" : "Women's Haircut"
+      }, {
+        "price" : "60$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 13",
+      "customerName" : "Steve Stark",
+      "phoneNo" : "+1(991) 410-7663"
+    }, {
+      "duration" : "35 min",
+      "total" : "70$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Sean Cassidy",
+      "startTime" : "13:00 AM",
+      "endTime" : "14:00 AM",
+      "services" : [ {
+        "price" : "40$",
+        "serviceName" : "Beard Trim"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Men's Haircut"
+      } ],
+      "orderTitle" : "Order 14",
+      "customerName" : "Kamala Romanoff",
+      "phoneNo" : "+1(232) 728-4685"
+    }, {
+      "duration" : "49 min",
+      "total" : "150$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Jean Grey",
+      "startTime" : "13:00 AM",
+      "endTime" : "14:00 AM",
+      "services" : [ {
+        "price" : "40$",
+        "serviceName" : "Massage"
+      }, {
+        "price" : "50$",
+        "serviceName" : "Men's Haircut"
+      }, {
+        "price" : "60$",
+        "serviceName" : "Hair Coloring"
+      } ],
+      "orderTitle" : "Order 15",
+      "customerName" : "Natasha Parker",
+      "phoneNo" : "+1(767) 753-8564"
+    } ],
+    "noOfOrders" : 15
+  }, {
+    "date" : "2025-09-01",
+    "orders" : [ {
+      "duration" : "36 min",
+      "total" : "110$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Sean Cassidy",
+      "startTime" : "10:00 AM",
+      "endTime" : "11:00 AM",
+      "services" : [ {
+        "price" : "50$",
+        "serviceName" : "Facial"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Men's Haircut"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Facial"
+      } ],
+      "orderTitle" : "Order 1",
+      "customerName" : "Clint Khan",
+      "phoneNo" : "+1(659) 267-1343"
+    }, {
+      "duration" : "42 min",
+      "total" : "80$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "13:00 AM",
+      "endTime" : "14:00 AM",
+      "services" : [ {
+        "price" : "80$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 2",
+      "customerName" : "Mary Jane",
+      "phoneNo" : "+1(775) 370-3292"
+    }, {
+      "duration" : "76 min",
+      "total" : "110$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "12:00 AM",
+      "endTime" : "13:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Beard Trim"
+      }, {
+        "price" : "40$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 3",
+      "customerName" : "Peter Stark",
+      "phoneNo" : "+1(309) 434-1634"
+    }, {
+      "duration" : "42 min",
+      "total" : "130$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "13:00 AM",
+      "endTime" : "14:00 AM",
+      "services" : [ {
+        "price" : "30$",
+        "serviceName" : "Massage"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Hair Wash"
+      }, {
+        "price" : "70$",
+        "serviceName" : "Men's Haircut"
+      } ],
+      "orderTitle" : "Order 4",
+      "customerName" : "Bruce Stark",
+      "phoneNo" : "+1(586) 400-1733"
+    }, {
+      "duration" : "78 min",
+      "total" : "30$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "16:00 AM",
+      "endTime" : "17:00 AM",
+      "services" : [ {
+        "price" : "30$",
+        "serviceName" : "Hair Wash"
+      } ],
+      "orderTitle" : "Order 5",
+      "customerName" : "Mary Khan",
+      "phoneNo" : "+1(751) 504-4657"
+    }, {
+      "duration" : "61 min",
+      "total" : "80$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "17:00 AM",
+      "endTime" : "18:00 AM",
+      "services" : [ {
+        "price" : "20$",
+        "serviceName" : "Hair Wash"
+      }, {
+        "price" : "60$",
+        "serviceName" : "Women's Haircut"
+      } ],
+      "orderTitle" : "Order 6",
+      "customerName" : "Peter Rogers",
+      "phoneNo" : "+1(777) 862-3894"
+    }, {
+      "duration" : "52 min",
+      "total" : "70$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Sean Cassidy",
+      "startTime" : "9:00 AM",
+      "endTime" : "10:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Facial"
+      } ],
+      "orderTitle" : "Order 7",
+      "customerName" : "Mary Rogers",
+      "phoneNo" : "+1(437) 522-4415"
+    }, {
+      "duration" : "50 min",
+      "total" : "50$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Scott Summers",
+      "startTime" : "13:00 AM",
+      "endTime" : "14:00 AM",
+      "services" : [ {
+        "price" : "50$",
+        "serviceName" : "Women's Haircut"
+      } ],
+      "orderTitle" : "Order 8",
+      "customerName" : "Mary Barton",
+      "phoneNo" : "+1(504) 179-2839"
+    }, {
+      "duration" : "67 min",
+      "total" : "160$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "16:00 AM",
+      "endTime" : "17:00 AM",
+      "services" : [ {
+        "price" : "50$",
+        "serviceName" : "Hair Wash"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Facial"
+      }, {
+        "price" : "80$",
+        "serviceName" : "Men's Haircut"
+      } ],
+      "orderTitle" : "Order 9",
+      "customerName" : "Peter Doe",
+      "phoneNo" : "+1(736) 797-3750"
+    }, {
+      "duration" : "88 min",
+      "total" : "180$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "16:00 AM",
+      "endTime" : "17:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Massage"
+      }, {
+        "price" : "40$",
+        "serviceName" : "Hair Wash"
+      }, {
+        "price" : "70$",
+        "serviceName" : "Beard Trim"
+      } ],
+      "orderTitle" : "Order 10",
+      "customerName" : "Mary Parker",
+      "phoneNo" : "+1(270) 668-6101"
+    }, {
+      "duration" : "81 min",
+      "total" : "60$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "9:00 AM",
+      "endTime" : "10:00 AM",
+      "services" : [ {
+        "price" : "20$",
+        "serviceName" : "Beard Trim"
+      }, {
+        "price" : "40$",
+        "serviceName" : "Beard Trim"
+      } ],
+      "orderTitle" : "Order 11",
+      "customerName" : "Peter Doe",
+      "phoneNo" : "+1(632) 669-4882"
+    }, {
+      "duration" : "80 min",
+      "total" : "70$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Sean Cassidy",
+      "startTime" : "15:00 AM",
+      "endTime" : "16:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Hair Wash"
+      } ],
+      "orderTitle" : "Order 12",
+      "customerName" : "Steve Jane",
+      "phoneNo" : "+1(856) 339-2468"
+    }, {
+      "duration" : "49 min",
+      "total" : "120$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Sean Cassidy",
+      "startTime" : "16:00 AM",
+      "endTime" : "17:00 AM",
+      "services" : [ {
+        "price" : "60$",
+        "serviceName" : "Men's Haircut"
+      }, {
+        "price" : "60$",
+        "serviceName" : "Hair Wash"
+      } ],
+      "orderTitle" : "Order 13",
+      "customerName" : "John Stark",
+      "phoneNo" : "+1(963) 249-5323"
+    }, {
+      "duration" : "62 min",
+      "total" : "100$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "16:00 AM",
+      "endTime" : "17:00 AM",
+      "services" : [ {
+        "price" : "30$",
+        "serviceName" : "Women's Haircut"
+      }, {
+        "price" : "70$",
+        "serviceName" : "Men's Haircut"
+      } ],
+      "orderTitle" : "Order 14",
+      "customerName" : "John Khan",
+      "phoneNo" : "+1(936) 574-8775"
+    } ],
+    "noOfOrders" : 14
+  }, {
+    "date" : "2025-08-31",
+    "orders" : [ {
+      "duration" : "52 min",
+      "total" : "70$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "11:00 AM",
+      "endTime" : "12:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Hair Wash"
+      } ],
+      "orderTitle" : "Order 1",
+      "customerName" : "Steve Jane",
+      "phoneNo" : "+1(951) 576-2559"
+    }, {
+      "duration" : "58 min",
+      "total" : "80$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "16:00 AM",
+      "endTime" : "17:00 AM",
+      "services" : [ {
+        "price" : "50$",
+        "serviceName" : "Beard Trim"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Beard Trim"
+      } ],
+      "orderTitle" : "Order 2",
+      "customerName" : "Peter Rogers",
+      "phoneNo" : "+1(129) 680-1467"
+    }, {
+      "duration" : "45 min",
+      "total" : "30$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jean Grey",
+      "startTime" : "10:00 AM",
+      "endTime" : "11:00 AM",
+      "services" : [ {
+        "price" : "30$",
+        "serviceName" : "Facial"
+      } ],
+      "orderTitle" : "Order 3",
+      "customerName" : "Clint Maximoff",
+      "phoneNo" : "+1(651) 631-6382"
+    }, {
+      "duration" : "82 min",
+      "total" : "20$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Sean Cassidy",
+      "startTime" : "13:00 AM",
+      "endTime" : "14:00 AM",
+      "services" : [ {
+        "price" : "20$",
+        "serviceName" : "Hair Coloring"
+      } ],
+      "orderTitle" : "Order 4",
+      "customerName" : "Kamala Wayne",
+      "phoneNo" : "+1(845) 366-4320"
+    } ],
+    "noOfOrders" : 4
+  }, {
+    "date" : "2025-08-30",
+    "orders" : [ {
+      "duration" : "71 min",
+      "total" : "150$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "15:00 AM",
+      "endTime" : "16:00 AM",
+      "services" : [ {
+        "price" : "40$",
+        "serviceName" : "Men's Haircut"
+      }, {
+        "price" : "70$",
+        "serviceName" : "Facial"
+      }, {
+        "price" : "40$",
+        "serviceName" : "Facial"
+      } ],
+      "orderTitle" : "Order 1",
+      "customerName" : "Wanda Romanoff",
+      "phoneNo" : "+1(183) 547-3746"
+    }, {
+      "duration" : "72 min",
+      "total" : "60$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jean Grey",
+      "startTime" : "8:00 AM",
+      "endTime" : "9:00 AM",
+      "services" : [ {
+        "price" : "20$",
+        "serviceName" : "Facial"
+      }, {
+        "price" : "40$",
+        "serviceName" : "Women's Haircut"
+      } ],
+      "orderTitle" : "Order 2",
+      "customerName" : "John Rogers",
+      "phoneNo" : "+1(384) 703-4945"
+    }, {
+      "duration" : "41 min",
+      "total" : "190$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "15:00 AM",
+      "endTime" : "16:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Women's Haircut"
+      }, {
+        "price" : "60$",
+        "serviceName" : "Men's Haircut"
+      }, {
+        "price" : "60$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 3",
+      "customerName" : "Steve Khan",
+      "phoneNo" : "+1(606) 759-6129"
+    }, {
+      "duration" : "84 min",
+      "total" : "70$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "15:00 AM",
+      "endTime" : "16:00 AM",
+      "services" : [ {
+        "price" : "20$",
+        "serviceName" : "Facial"
+      }, {
+        "price" : "50$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 4",
+      "customerName" : "Peter Khan",
+      "phoneNo" : "+1(237) 600-6873"
+    } ],
+    "noOfOrders" : 4
+  }, {
+    "date" : "2025-08-29",
+    "orders" : [ {
+      "duration" : "42 min",
+      "total" : "210$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "8:00 AM",
+      "endTime" : "9:00 AM",
+      "services" : [ {
+        "price" : "60$",
+        "serviceName" : "Hair Wash"
+      }, {
+        "price" : "70$",
+        "serviceName" : "Men's Haircut"
+      }, {
+        "price" : "80$",
+        "serviceName" : "Facial"
+      } ],
+      "orderTitle" : "Order 1",
+      "customerName" : "Mary Parker",
+      "phoneNo" : "+1(575) 649-1990"
+    }, {
+      "duration" : "51 min",
+      "total" : "50$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "8:00 AM",
+      "endTime" : "9:00 AM",
+      "services" : [ {
+        "price" : "20$",
+        "serviceName" : "Hair Wash"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 2",
+      "customerName" : "Bruce Parker",
+      "phoneNo" : "+1(537) 694-5323"
+    }, {
+      "duration" : "72 min",
+      "total" : "130$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "12:00 AM",
+      "endTime" : "13:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Massage"
+      }, {
+        "price" : "60$",
+        "serviceName" : "Beard Trim"
+      } ],
+      "orderTitle" : "Order 3",
+      "customerName" : "Wanda Stark",
+      "phoneNo" : "+1(822) 498-1474"
+    }, {
+      "duration" : "44 min",
+      "total" : "60$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Scott Summers",
+      "startTime" : "16:00 AM",
+      "endTime" : "17:00 AM",
+      "services" : [ {
+        "price" : "60$",
+        "serviceName" : "Facial"
+      } ],
+      "orderTitle" : "Order 4",
+      "customerName" : "John Doe",
+      "phoneNo" : "+1(995) 424-9764"
+    }, {
+      "duration" : "57 min",
+      "total" : "50$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jean Grey",
+      "startTime" : "9:00 AM",
+      "endTime" : "10:00 AM",
+      "services" : [ {
+        "price" : "50$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 5",
+      "customerName" : "Mary Stark",
+      "phoneNo" : "+1(864) 183-8551"
+    }, {
+      "duration" : "44 min",
+      "total" : "40$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Scott Summers",
+      "startTime" : "11:00 AM",
+      "endTime" : "12:00 AM",
+      "services" : [ {
+        "price" : "40$",
+        "serviceName" : "Men's Haircut"
+      } ],
+      "orderTitle" : "Order 6",
+      "customerName" : "Mary Doe",
+      "phoneNo" : "+1(816) 630-5091"
+    }, {
+      "duration" : "63 min",
+      "total" : "150$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "11:00 AM",
+      "endTime" : "12:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Hair Coloring"
+      }, {
+        "price" : "80$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 7",
+      "customerName" : "Wanda Rogers",
+      "phoneNo" : "+1(260) 371-2220"
+    }, {
+      "duration" : "57 min",
+      "total" : "130$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "15:00 AM",
+      "endTime" : "16:00 AM",
+      "services" : [ {
+        "price" : "30$",
+        "serviceName" : "Women's Haircut"
+      }, {
+        "price" : "80$",
+        "serviceName" : "Men's Haircut"
+      }, {
+        "price" : "20$",
+        "serviceName" : "Beard Trim"
+      } ],
+      "orderTitle" : "Order 8",
+      "customerName" : "Bruce Rogers",
+      "phoneNo" : "+1(220) 377-1600"
+    }, {
+      "duration" : "58 min",
+      "total" : "80$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "10:00 AM",
+      "endTime" : "11:00 AM",
+      "services" : [ {
+        "price" : "80$",
+        "serviceName" : "Women's Haircut"
+      } ],
+      "orderTitle" : "Order 9",
+      "customerName" : "Mary Jane",
+      "phoneNo" : "+1(526) 609-5298"
+    }, {
+      "duration" : "63 min",
+      "total" : "80$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Scott Summers",
+      "startTime" : "12:00 AM",
+      "endTime" : "13:00 AM",
+      "services" : [ {
+        "price" : "20$",
+        "serviceName" : "Hair Coloring"
+      }, {
+        "price" : "40$",
+        "serviceName" : "Women's Haircut"
+      }, {
+        "price" : "20$",
+        "serviceName" : "Facial"
+      } ],
+      "orderTitle" : "Order 10",
+      "customerName" : "Steve Romanoff",
+      "phoneNo" : "+1(391) 769-2689"
+    }, {
+      "duration" : "72 min",
+      "total" : "210$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jean Grey",
+      "startTime" : "11:00 AM",
+      "endTime" : "12:00 AM",
+      "services" : [ {
+        "price" : "60$",
+        "serviceName" : "Facial"
+      }, {
+        "price" : "70$",
+        "serviceName" : "Hair Coloring"
+      }, {
+        "price" : "80$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 11",
+      "customerName" : "Peter Romanoff",
+      "phoneNo" : "+1(506) 625-7857"
+    }, {
+      "duration" : "50 min",
+      "total" : "20$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Jean Grey",
+      "startTime" : "15:00 AM",
+      "endTime" : "16:00 AM",
+      "services" : [ {
+        "price" : "20$",
+        "serviceName" : "Massage"
+      } ],
+      "orderTitle" : "Order 12",
+      "customerName" : "Steve Parker",
+      "phoneNo" : "+1(301) 780-9762"
+    }, {
+      "duration" : "46 min",
+      "total" : "70$",
+      "statusTag" : "Completed",
+      "paymentTag" : "Paid",
+      "staffMember" : "Jane Smith",
+      "startTime" : "8:00 AM",
+      "endTime" : "9:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Facial"
+      } ],
+      "orderTitle" : "Order 13",
+      "customerName" : "Bruce Rogers",
+      "phoneNo" : "+1(901) 582-8908"
+    }, {
+      "duration" : "61 min",
+      "total" : "50$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "11:00 AM",
+      "endTime" : "12:00 AM",
+      "services" : [ {
+        "price" : "50$",
+        "serviceName" : "Men's Haircut"
+      } ],
+      "orderTitle" : "Order 14",
+      "customerName" : "Peter Jane",
+      "phoneNo" : "+1(341) 567-1997"
+    }, {
+      "duration" : "54 min",
+      "total" : "90$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Logan Howlett",
+      "startTime" : "9:00 AM",
+      "endTime" : "10:00 AM",
+      "services" : [ {
+        "price" : "70$",
+        "serviceName" : "Hair Coloring"
+      }, {
+        "price" : "20$",
+        "serviceName" : "Women's Haircut"
+      } ],
+      "orderTitle" : "Order 15",
+      "customerName" : "John Stark",
+      "phoneNo" : "+1(364) 124-7179"
+    }, {
+      "duration" : "68 min",
+      "total" : "170$",
+      "statusTag" : "Completed",
+      "paymentTag" : "paid",
+      "staffMember" : "Sean Cassidy",
+      "startTime" : "12:00 AM",
+      "endTime" : "13:00 AM",
+      "services" : [ {
+        "price" : "80$",
+        "serviceName" : "Beard Trim"
+      }, {
+        "price" : "60$",
+        "serviceName" : "Women's Haircut"
+      }, {
+        "price" : "30$",
+        "serviceName" : "Hair Coloring"
+      } ],
+      "orderTitle" : "Order 16",
+      "customerName" : "Mary Jane",
+      "phoneNo" : "+1(339) 922-2384"
+    } ],
+    "noOfOrders" : 16
+  } ]
+}

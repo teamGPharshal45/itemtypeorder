@@ -20,9 +20,6 @@ import com.example.itemtype.ui.PastOrders.PastOrder;
 import com.example.itemtype.ui.UpcomingOrders.UpcomingBookings;
 import com.example.itemtype.ui.WaitListOrders.WaitListOrder;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class MainActivity extends AppCompatActivity {
 
     ImageButton backButton , nextButton;
@@ -53,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+
         ViewPager2 viewPagerTabs = findViewById(R.id.OrderList);
 
         OrdersSubMenuAdapter adapter = new OrdersSubMenuAdapter(getSupportFragmentManager(),getLifecycle());
@@ -68,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
         backButton = findViewById(R.id.BackButton);
         MenuLogo = findViewById(R.id.ImgLogo);
         MenuName = findViewById(R.id.MenuName);
+        MenuLogo.setImageResource(MenuImg[count]);
+        MenuName.setText(MenuNm[count]);
 
 
         nextButton.setOnClickListener(new View.OnClickListener() {
