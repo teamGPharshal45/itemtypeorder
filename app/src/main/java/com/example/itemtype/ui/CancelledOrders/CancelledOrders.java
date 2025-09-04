@@ -32,21 +32,20 @@ import java.util.Random;
 public class CancelledOrders extends Fragment {
 
     RecyclerView recyclerView;
-
     OrdersAdapter adapter;
-
-
+    JsonOrderRepository repository;
     List<ListItem> itemArrayList;
-    Random random = new Random();
-    TestDataGenerator dataGenerator = new TestDataGenerator();
 
+    public void setJsonOrderRepository(JsonOrderRepository jsonOrderRepository) {
+        this.repository = jsonOrderRepository;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_cancelled_orders, container, false);
         recyclerView = view.findViewById(R.id.orders);
-        JsonOrderRepository repository = new JsonOrderRepository(getContext());
+
 
 OrdersResponse ordersResponse = repository.getCancelledOrders();
 
