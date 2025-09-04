@@ -1,5 +1,6 @@
 package com.example.itemtype.ui.CancelledOrders;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,10 +12,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.itemtype.R;
 import com.example.itemtype.dummydatagenerators.TestDataGenerator;
+import com.example.itemtype.model.DateOrders;
+import com.example.itemtype.model.OrderData;
+import com.example.itemtype.model.OrdersResponse;
 import com.example.itemtype.models.DateItem;
 import com.example.itemtype.models.ListItem;
 import com.example.itemtype.models.OrderItem;
+import com.example.itemtype.models.OrdersDetails;
+import com.google.gson.Gson;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -36,29 +45,52 @@ public class CancelledOrders extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_cancelled_orders, container, false);
         recyclerView = view.findViewById(R.id.orders);
-        CreateDatesOrder();
+
+OrdersResponse ordersResponse = loadJson();
+
+if(ordersResponse!=null) {
+    CreateDatesOrder(ordersResponse);
+}
 
         return view;
     }
 
-    public void CreateDatesOrder()
+    private OrdersResponse loadJson()
+    {
+        try {
+            InputStream is = getResources().openRawResource(R.raw.cancelledorders);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            String json = new String(buffer, StandardCharsets.UTF_8);
+
+            Gson gson = new Gson();
+            return gson.fromJson(json, OrdersResponse.class);
+
+
+
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+
+    public void CreateDatesOrder(OrdersResponse ordersResponse)
     {
         itemArrayList = new ArrayList<>();
 
-
-        for (int i=0;i<5;i++)
+        for(DateOrders dateOrders : ordersResponse.getDates())
         {
-            String date = "2025-08-"+(20+i);
+            itemArrayList.add(new DateItem(dateOrders.getDate()));
 
-            itemArrayList.add(new DateItem(date));
-
-            int num = 2 + random.nextInt(20);
-
-            for(int j=0;j<num;j++){
-                itemArrayList.add(new OrderItem(dataGenerator.GetRandomOrder()));
+            for (OrderData orderData : dateOrders.getOrders())
+            {
+                OrdersDetails ordersDetails = new OrdersDetails(orderData.getStartTime(),orderData.getEndTime(),orderData.getOrderTitle(),orderData.getCustomerName(),orderData.getStatusTag(),orderData.getPaymentTag());
+                itemArrayList.add(new OrderItem(ordersDetails));
             }
-
-
         }
 
 
