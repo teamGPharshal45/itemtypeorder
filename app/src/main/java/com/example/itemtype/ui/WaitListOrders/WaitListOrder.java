@@ -11,9 +11,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.itemtype.R;
 import com.example.itemtype.dummydatagenerators.TestDataGenerator;
+import com.example.itemtype.model.DateOrders;
+import com.example.itemtype.model.JsonOrderRepository;
+import com.example.itemtype.model.OrderData;
+import com.example.itemtype.model.OrdersResponse;
 import com.example.itemtype.models.DateItem;
 import com.example.itemtype.models.ListItem;
 import com.example.itemtype.models.OrderItem;
+import com.example.itemtype.models.OrdersDetails;
 import com.example.itemtype.ui.CancelledOrders.OrdersAdapter;
 
 import java.util.ArrayList;
@@ -35,44 +40,44 @@ public class WaitListOrder extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_wait_list_order, container, false);
         recyclerView = view.findViewById(R.id.orders);
-        CreateDatesOrder();
 
-        return view;
-    }
+        JsonOrderRepository repository = new JsonOrderRepository(getContext());
 
-    public void CreateDatesOrder()
-    {
-        itemArrayList = new ArrayList<>();
+        OrdersResponse ordersResponse = repository.getWaitlistOrders();
 
-
-        for (int i=0;i<5;i++)
-        {
-            String date = "2025-08-"+(20+i);
-
-            itemArrayList.add(new DateItem(date));
-
-            int num = 2 + random.nextInt(20);
-
-            for(int j=0;j<num;j++){
-                itemArrayList.add(new OrderItem(dataGenerator.GetRandomOrder()));
-            }
-
-
+        if(ordersResponse!=null) {
+            CreateDatesOrder(ordersResponse);
         }
 
 
 
-        adapter = new OrdersAdapter(getContext(),itemArrayList);
+        return view;
+    }
+
+    public void CreateDatesOrder(OrdersResponse ordersResponse) {
+        itemArrayList = new ArrayList<>();
+
+
+        for (DateOrders dateOrders : ordersResponse.getDates()) {
+            itemArrayList.add(new DateItem(dateOrders.getDate()));
+
+            for (OrderData orderData : dateOrders.getOrders()) {
+                OrdersDetails ordersDetails = new OrdersDetails(orderData.getStartTime(), orderData.getEndTime(), orderData.getOrderTitle(), orderData.getCustomerName(), orderData.getStatusTag(), orderData.getPaymentTag());
+                itemArrayList.add(new OrderItem(ordersDetails));
+            }
+        }
+
+
+        adapter = new OrdersAdapter(getContext(), itemArrayList);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
-
-
-
-
 
     }
 
 
 
-
 }
+
+
+
+

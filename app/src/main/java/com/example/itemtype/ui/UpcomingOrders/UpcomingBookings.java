@@ -11,9 +11,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.itemtype.R;
 import com.example.itemtype.dummydatagenerators.TestDataGenerator;
+import com.example.itemtype.model.DateOrders;
+import com.example.itemtype.model.JsonOrderRepository;
+import com.example.itemtype.model.OrderData;
+import com.example.itemtype.model.OrdersResponse;
 import com.example.itemtype.models.DateItem;
 import com.example.itemtype.models.ListItem;
 import com.example.itemtype.models.OrderItem;
+import com.example.itemtype.models.OrdersDetails;
 import com.example.itemtype.ui.CancelledOrders.OrdersAdapter;
 
 import java.util.ArrayList;
@@ -38,30 +43,34 @@ public class UpcomingBookings extends Fragment  {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_upcoming_bookings, container, false);
         recyclerView = view.findViewById(R.id.orders);
-        CreateDatesOrder();
+
+        JsonOrderRepository repository = new JsonOrderRepository(getContext());
+
+        OrdersResponse ordersResponse = repository.getUpcomingOrders();
+
+        if(ordersResponse!=null) {
+            CreateDatesOrder(ordersResponse);
+        }
+
 
 
         return view;
     }
 
-    public void CreateDatesOrder()
+    public void CreateDatesOrder(OrdersResponse ordersResponse)
     {
         itemArrayList = new ArrayList<>();
 
 
-        for (int i=0;i<5;i++)
+        for(DateOrders dateOrders : ordersResponse.getDates())
         {
-            String date = "2025-08-"+(20+i);
+            itemArrayList.add(new DateItem(dateOrders.getDate()));
 
-            itemArrayList.add(new DateItem(date));
-
-            int num = 2 + random.nextInt(20);
-
-            for(int j=0;j<num;j++){
-                itemArrayList.add(new OrderItem(dataGenerator.GetRandomOrder()));
+            for (OrderData orderData : dateOrders.getOrders())
+            {
+                OrdersDetails ordersDetails = new OrdersDetails(orderData.getStartTime(),orderData.getEndTime(),orderData.getOrderTitle(),orderData.getCustomerName(),orderData.getStatusTag(),orderData.getPaymentTag());
+                itemArrayList.add(new OrderItem(ordersDetails));
             }
-
-
         }
 
 

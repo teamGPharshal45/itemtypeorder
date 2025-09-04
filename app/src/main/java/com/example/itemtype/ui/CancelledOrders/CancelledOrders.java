@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.itemtype.R;
 import com.example.itemtype.dummydatagenerators.TestDataGenerator;
 import com.example.itemtype.model.DateOrders;
+import com.example.itemtype.model.JsonOrderRepository;
 import com.example.itemtype.model.OrderData;
 import com.example.itemtype.model.OrdersResponse;
 import com.example.itemtype.models.DateItem;
@@ -45,8 +46,9 @@ public class CancelledOrders extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_cancelled_orders, container, false);
         recyclerView = view.findViewById(R.id.orders);
+        JsonOrderRepository repository = new JsonOrderRepository(getContext());
 
-OrdersResponse ordersResponse = loadJson();
+OrdersResponse ordersResponse = repository.getCancelledOrders();
 
 if(ordersResponse!=null) {
     CreateDatesOrder(ordersResponse);
@@ -55,26 +57,7 @@ if(ordersResponse!=null) {
         return view;
     }
 
-    private OrdersResponse loadJson()
-    {
-        try {
-            InputStream is = getResources().openRawResource(R.raw.cancelledorders);
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            String json = new String(buffer, StandardCharsets.UTF_8);
 
-            Gson gson = new Gson();
-            return gson.fromJson(json, OrdersResponse.class);
-
-
-
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
 
 
